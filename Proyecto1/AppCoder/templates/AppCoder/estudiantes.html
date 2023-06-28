@@ -1,0 +1,16 @@
+<div>
+    {% extends "AppCoder/inicio.html" %}
+    {% load static %}
+    
+        {% block contenidoQueCambia %}
+            <p>Estudiantes</p>
+            <div class="formSetEstudiante">
+                {% block setEstudiante %}
+                {% endblock %}
+            </div>          
+            <div class="formGetEstudiante">
+                {% block getEstudiante %}
+                {% endblock %}
+            </div>          
+        {% endblock %}
+</div>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'AppCoder/css/tinchoStyle.css'%}" rel="stylesheet"/>
+<!--<link href="{% static 'AppCoder/css/bootstrap.min.css'%}" rel="stylesheet"/>
+    <script src="{% static 'AppCoder/js/bootstrap.min.js'%}"></script>-->
+    <title>Inicio|AppCoder</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="top-bar"></div>
+        <div class="logo">
+            <h1>Campus Coder House</h1>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link navText" href="{% url 'Cursos' %}">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link navText" href="{% url 'Entregables' %}">Entregables</a></li>
+                    <li class="nav-item"><a class="nav-link navText" href="{% url 'Estudiantes' %}">Estudiantes</a></li>
+                    <li class="nav-item"><a class="nav-link navText" href="{% url 'Profesores' %}">Profesores</a></li> 
+                </ul>
+            </div>
+    <div class="contenido">
+        {% block contenidoQueCambia %}
+        {% endblock %}
+    </div>
+    <footer></footer>
+</body>
+</html>

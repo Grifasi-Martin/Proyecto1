@@ -1,0 +1,14 @@
+<div>
+    {% extends "MarketCons/cliente.html" %}
+    {% load static %}
+    
+    {% block setCliente %}
+        <h4>Registrarse!<h4>
+        <form action="/MarketCons/setCliente/" method="post"> {% csrf_token %}
+            <table>
+                {{ elFormulario.as_table }}
+            </table>
+            <input type = "submit" value="Enviar">
+        </form>
+    {% endblock %}    
+</div>

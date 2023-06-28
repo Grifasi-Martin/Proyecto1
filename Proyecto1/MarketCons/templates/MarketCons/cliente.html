@@ -1,0 +1,18 @@
+<div>
+    {% extends "MarketCons/inicio.html" %}
+    {% load static %}
+        {% block contenidoQueCambia %}
+            <h4> 🛍️ Seccion clientes, podras ingresar y loguearte para empezar a comprar y disfrutar de nuestro servicio!</h4>
+            <div class="formSetCliente">
+                {% block setCliente %}
+                {% endblock %}
+            </div>     
+            <div class="formGetCliente">
+                {% block getCliente %}
+                {% endblock %}
+            </div>  
+            
+            <li class="nav-item"><a class="nav-link navText" href="{% url 'Inicio' %}">Volver a inicio</a></li>
+
+        {% endblock %}
+</div>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'AppCoder/css/tinchiStyle.css'%}" rel="stylesheet"/>
+    <title>MarketCons 👷</title>
+    <h1>🦺 MarketCons 👷 </h1>
+    <h3>El primer marketplace de construccion!</h3>
+    <div>
+        <h5>🚧Pagina en construccion. Estamos trabajando para que tenga la mejor experiencia de compra!🚧</h5>
+    </div>
+</head>
+<body>
+    <!-- header -->
+    <div class="top-bar"></div>
+        <div class="logo">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link navText" href="{% url 'setCliente' %}">Registrarse!</a></li>
+                <li class="nav-item"><a class="nav-link navText" href="{% url 'getCliente' %}">Datos cuenta registrada</a></li>
+                <li class="nav-item"><a class="nav-link navText" href="{% url 'Cliente' %}">Clientes</a></li>
+                <li class="nav-item"><a class="nav-link navText" href="{% url 'Producto' %}">Productos</a></li>
+                <li class="nav-item"><a class="nav-link navText" href="{% url 'Ayuda' %}">Centro de ayuda </a></li>
+                <li class="nav-item"><a class="nav-link navText" href="{% url 'Empleado' %}">Portal empleados</a></li> 
+            </ul>
+        </div>
+    <div class="contenido">
+        {% block contenidoQueCambia %}
+
+        <h4> 🏠 Seccion incio, en el encontraras las mejores ofertas y novedades del mercado de la construccion.</h4>
+
+        {% endblock %}
+    </div>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<div>
+    {% extends "MarketCons/inicio.html" %}
+    {% load static %}
+        {% block contenidoQueCambia %}
+            <h4> 🛒 Seccion productos, aca podras ver la disponibilidad y variedad de productos con los que contamos y empezar a comprar </h4>
+            
+            <li class="nav-item"><a class="nav-link navText" href="{% url 'Inicio' %}">Volver a inicio</a></li>
+            
+        {% endblock %}
+</div>
